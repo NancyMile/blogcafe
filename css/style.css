@@ -19,7 +19,7 @@ html {
 body {
     font-family: var(--paragraphFont);
     font-size: 1.6rem;
-    line-height: 5rem;
+    line-height: 3rem;
 }
 /** globals **/
  .container {
@@ -73,6 +73,7 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    line-height: 5rem;
 }
 
 .header__text {
@@ -116,4 +117,12 @@ img {
     text-align: center;
     font-size: 1.8rem;
     color: var(--white);
+}
+
+@media (min-width: 768px) {
+    .main-container{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
 }
