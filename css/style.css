@@ -20,7 +20,7 @@ html {
 body {
     font-family: var(--paragraphFont);
     font-size: 1.6rem;
-    line-height: 3rem;
+    line-height: 2;
 }
 /** globals **/
  .container {
@@ -34,6 +34,7 @@ body {
 
 h1, h2, h3, h4 {
     font-family: var(--headingFont);
+    line-height: 1.2;
 }
 
 h1 {
@@ -74,7 +75,6 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    line-height: 5rem;
 }
 
 .header__text {
@@ -157,4 +157,32 @@ img {
 }
 .button--primary{
     background-color: var(--black);
+}
+.button--secundary{
+    background-color: var(--primary);
+}
+.courses{
+    list-style: none;
+}
+.widget-course{
+    border-bottom: 1px solid var(--gray);
+    margin-bottom: 2rem;
+}
+
+.widget-course:last-of-type{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.widget-course__label{
+    font-family: var(--headingFont);
+    font-weight: 700;
+}
+.widget-course__info{
+    font-weight: 400;
+}
+
+.widget-course__info,
+.widget-course__label{
+    font-size: 2rem;
 }
