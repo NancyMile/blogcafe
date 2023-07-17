@@ -151,6 +151,7 @@ img {
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
+     border: none;
 }
 
 @media (min-width: 768px) {
@@ -158,6 +159,11 @@ img {
         display: inline-block;
     }
 }
+
+.button:hover{
+    cursor: pointer;
+}
+
 .button--primary{
     background-color: var(--black);
 }
@@ -240,4 +246,28 @@ img {
     height: 40rem;
     background-image: cover;
     background-repeat: no-repeat;
+}
+
+.form{
+ background-color: var(--white);
+ margin: -5rem auto 0 auto;
+ width: 95%;
+ padding: 5rem;
+}
+.field{
+    display:flex;
+    margin-bottom: 2rem;
+}
+.field__label{
+    flex: 0 0 9rem; /*no increment  or decrement  takes just 9 rem*/
+    text-align: right;
+    padding-right: 2rem;
+}
+.field__input{
+    flex: 1;
+    border: 1px solid var(--gray);
+}
+
+.field__input--textarea{
+     height: 20rem;
 }
