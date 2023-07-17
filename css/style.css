@@ -233,3 +233,11 @@ img {
 .course__label{
     font-size: 2rem;
 }
+
+/** contact us **/
+.contact-bg{
+    background-image: url('../img/contacto.jpg');
+    height: 40rem;
+    background-image: cover;
+    background-repeat: no-repeat;
+}
