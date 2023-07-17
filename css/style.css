@@ -19,7 +19,7 @@ html {
 body {
     font-family: var(--paragraphFont);
     font-size: 1.6rem;
-    line-height: 2rem;
+    line-height: 5rem;
 }
 /** globals **/
  .container {
@@ -30,6 +30,7 @@ body {
  a {
     text-decoration: none;
  }
+
 h1, h2, h3, h4 {
     font-family: var(--headingFont);
 }
@@ -65,7 +66,6 @@ img {
 .text-center {
     text-align: center;
 }
-
 /** header **/
 .header{
     background-image: url('../img/banner.jpg');
@@ -78,5 +78,42 @@ img {
 .header__text {
     text-align: center;
     color: var(--white);
-    margin-top:  5rem;
+    margin-top: 5rem;
+}
+
+@media (min-width: 768px) {
+    .header__text{
+        margin-top: 15rem;
+    }
+}
+
+/** bar **/
+@media (min-width: 768px) {
+     .bar{
+        display: flex;
+        justify-content: space-between; /*horizontal*/
+        align-items: center; /*vertical*/
+     }
+}
+.logo {
+ color: var(--white);
+}
+.logo__name {
+    font-weight: normal;
+}
+.logo__bold {
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .navigation{
+       display: flex;
+       gap: 2rem;
+   }
+}
+.navigation__link{
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--white);
 }
