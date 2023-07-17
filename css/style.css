@@ -24,8 +24,7 @@ body {
 }
 /** globals **/
  .container {
-    max-width: 120rem;
-    width: 90%;
+    width: min(90%, 120rem );
     margin: 0 auto;
  }
  a {
@@ -90,6 +89,10 @@ img {
 }
 
 /** bar **/
+.bar{
+    padding-top: 4rem;
+}
+
 @media (min-width: 768px) {
      .bar{
         display: flex;
@@ -185,4 +188,9 @@ img {
 .widget-course__info,
 .widget-course__label{
     font-size: 2rem;
+}
+.footer{
+    background-color: var(--black);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
 }
